@@ -112,7 +112,7 @@ body {
     justify-content: center;
     align-items: center;
     width:calc(100%/3);
-
+}
 .team {
     display: flex;
     flex-direction: column;
@@ -218,6 +218,6 @@ body {
     border-radius: 6px;
     padding:10px 48px;
     color: rgba(#fff,0.9);
-    box-shadow:0 4px 8px 0 rgba(#303030,0.25)
+    box-shadow:0 4px 8px 0 rgba(#303030,0.25);
 }
  
