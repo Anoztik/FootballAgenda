@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FootballAgenda</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,12 +18,13 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- nav -->
+    <nav class="sticky-top navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="">FootballAgenda</a>
+        <a class="navbar-brand" href="#carousel">FootballAgenda</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,13 +42,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#news">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#videos">Videos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#matchs">Matchs</a>
             </li>
           </ul>
         </div>
@@ -62,7 +63,10 @@
         </form>
       </div>
     </nav>
+
+    <!-- main -->
     <main>
+      <!-- carousel -->
       <section id="carousel">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
@@ -131,69 +135,937 @@
         </div>
       </section>
 
-      <section id="match">
-        <div class="match-container">
-          <div class="match-top">
-            <div class="status bg-danger-subtle text-danger">Live</div>
-            <div class="place-info">
-              <img
-                class="match-logo"
-                src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png"
-                alt=""
-              />
-              <div class="match-name">English Premier League</div>
-            </div>
-            <div class="buttons">
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-share-from-square"></i>
+      <!-- news -->
+      <section id="news">
+        <h2 class="title">Hot news</h2>
+        <div class="container my-5">
+          <!-- biggestt post -->
+          <div class="card mb-3 w-100">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <img
+                  src="https://t3.ftcdn.net/jpg/02/65/22/78/360_F_265227859_ZMqb2Po2FubWF0jgqe0Cn4ZdXx9SGpBf.jpg"
+                  class="img-fluid rounded-start"
+                  style="object-fit: cover; width: 100%"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row match-main">
-            <div class="col team-info">
-              <div class="logo-image">
+
+          <!-- Top 2 hot Blogs -->
+          <div class="row mb-4 g-2">
+            <div class="col">
+              <div class="card mb-3 w-100">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="https://t3.ftcdn.net/jpg/02/65/22/78/360_F_265227859_ZMqb2Po2FubWF0jgqe0Cn4ZdXx9SGpBf.jpg"
+                      class="img-fluid rounded-start"
+                      style="object-fit: cover; width: 100%; height: 100%"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >Last updated 3 mins ago</small
+                        >
+                      </p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3 w-100">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="https://t3.ftcdn.net/jpg/02/65/22/78/360_F_265227859_ZMqb2Po2FubWF0jgqe0Cn4ZdXx9SGpBf.jpg"
+                      class="img-fluid rounded-start"
+                      style="object-fit: cover; width: 100%; height: 100%"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          >Last updated 3 mins ago</small
+                        >
+                      </p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Smaller Blog Cards -->
+          <div class="row blog-list">
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/AP_22176331652915-f2d87da60f524351a0ecf08e57e020af.jpg"
+                  class="card-img-top"
+                  alt="Blog Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">A short description of the blog post.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/AP_22176331652915-f2d87da60f524351a0ecf08e57e020af.jpg"
+                  class="card-img-top"
+                  alt="Blog Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">A short description of the blog post.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/AP_22176331652915-f2d87da60f524351a0ecf08e57e020af.jpg"
+                  class="card-img-top"
+                  alt="Blog Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">A short description of the blog post.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Add more blog cards as needed -->
+          </div>
+          <div class="row blog-list">
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/AP_22176331652915-f2d87da60f524351a0ecf08e57e020af.jpg"
+                  class="card-img-top"
+                  alt="Blog Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">A short description of the blog post.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/AP_22176331652915-f2d87da60f524351a0ecf08e57e020af.jpg"
+                  class="card-img-top"
+                  alt="Blog Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">A short description of the blog post.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/AP_22176331652915-f2d87da60f524351a0ecf08e57e020af.jpg"
+                  class="card-img-top"
+                  alt="Blog Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">A short description of the blog post.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Add more blog cards as needed -->
+          </div>
+          <div class="row blog-list">
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/AP_22176331652915-f2d87da60f524351a0ecf08e57e020af.jpg"
+                  class="card-img-top"
+                  alt="Blog Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">A short description of the blog post.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/AP_22176331652915-f2d87da60f524351a0ecf08e57e020af.jpg"
+                  class="card-img-top"
+                  alt="Blog Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">A short description of the blog post.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img
+                  src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1080,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/AP_22176331652915-f2d87da60f524351a0ecf08e57e020af.jpg"
+                  class="card-img-top"
+                  alt="Blog Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Title</h5>
+                  <p class="card-text">A short description of the blog post.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Add more blog cards as needed -->
+          </div>
+        </div>
+        <!-- pagination -->
+        <div class="page-links">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- videos -->
+      <section id="videos">
+        <h2 class="title">New videos and shorts</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="video-card">
+              <img
+                src="https://image.vietnamnews.vn/uploadvnnews/Article/Hong_Minh/2019/11/26/76280342_3087637537919242_4956903944807776256_n-1.jpg"
+                alt="Video Thumbnail"
+              />
+              <span class="video-duration">10:25</span>
+              <span class="play-btn">&#9654;</span>
+            </div>
+            <div class="video-info">
+              <h5 class="mt-2">Exciting Match Highlights</h5>
+              <p class="text-muted">By John Doe</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="video-card">
+              <img
+                src="https://image.vietnamnews.vn/uploadvnnews/Article/Hong_Minh/2019/11/26/76280342_3087637537919242_4956903944807776256_n-1.jpg"
+                alt="Video Thumbnail"
+              />
+              <span class="video-duration">05:30</span>
+              <span class="play-btn">&#9654;</span>
+            </div>
+            <div class="video-info">
+              <h5 class="mt-2">Top 10 Goals of the Season</h5>
+              <p class="text-muted">By Jane Smith</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="video-card">
+              <img
+                src="https://image.vietnamnews.vn/uploadvnnews/Article/Hong_Minh/2019/11/26/76280342_3087637537919242_4956903944807776256_n-1.jpg"
+                alt="Video Thumbnail"
+              />
+              <span class="video-duration">12:15</span>
+              <span class="play-btn">&#9654;</span>
+            </div>
+            <div class="video-info">
+              <h5 class="mt-2">Amazing Skills Compilation</h5>
+              <p class="text-muted">By Alex Johnson</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="video-card">
+              <img
+                src="https://image.vietnamnews.vn/uploadvnnews/Article/Hong_Minh/2019/11/26/76280342_3087637537919242_4956903944807776256_n-1.jpg"
+                alt="Video Thumbnail"
+              />
+              <span class="video-duration">10:25</span>
+              <span class="play-btn">&#9654;</span>
+            </div>
+            <div class="video-info">
+              <h5 class="mt-2">Exciting Match Highlights</h5>
+              <p class="text-muted">By John Doe</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="video-card">
+              <img
+                src="https://image.vietnamnews.vn/uploadvnnews/Article/Hong_Minh/2019/11/26/76280342_3087637537919242_4956903944807776256_n-1.jpg"
+                alt="Video Thumbnail"
+              />
+              <span class="video-duration">05:30</span>
+              <span class="play-btn">&#9654;</span>
+            </div>
+            <div class="video-info">
+              <h5 class="mt-2">Top 10 Goals of the Season</h5>
+              <p class="text-muted">By Jane Smith</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="video-card">
+              <img
+                src="https://image.vietnamnews.vn/uploadvnnews/Article/Hong_Minh/2019/11/26/76280342_3087637537919242_4956903944807776256_n-1.jpg"
+                alt="Video Thumbnail"
+              />
+              <span class="video-duration">12:15</span>
+              <span class="play-btn">&#9654;</span>
+            </div>
+            <div class="video-info">
+              <h5 class="mt-2">Amazing Skills Compilation</h5>
+              <p class="text-muted">By Alex Johnson</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- matchs -->
+      <section id="matchs">
+        <h2 class="title">Matchs for today</h2>
+        <div class="matchs">
+          <div class="match-container">
+            <div class="match-top">
+              <div class="status bg-danger-subtle text-danger">Live</div>
+              <div class="place-info">
+                <img
+                  class="match-logo"
+                  src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png"
                   alt=""
                 />
+                <div class="match-name">English Premier League</div>
               </div>
-              <div class="team-name">Chelsea</div>
+              <div class="buttons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
             </div>
-
-            <div class="col match-info">
-              <div class="match-schedule">1 May at 17:30</div>
-              <div class="match-score">
-                <span class="score-left">2</span>:<span class="score-right"
-                  >1</span
-                >
-              </div>
-              <div class="match-time">Pedro Neto 64' 
-                Aaron Wan-Bissaka 74'(OG)  
-                Jarrod Bowen 42'</div>
-              <div class="match-referee">Referee: Mike dean</div>
-              <div class="match-bet-options">
-                <button class="match-bet-option">1.48</button>
-                <button class="match-bet-option">7.48</button>
-                <button class="match-bet-option">3.74</button>
+            <div class="row match-main">
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">Chelsea</div>
               </div>
 
-              <button type="button" class="match-locate-btn">
-                Place to bet
-              </button>
+              <div class="col match-info">
+                <div class="match-schedule">1 May at 17:30</div>
+                <div class="match-score">
+                  <span class="score-left">2</span>:<span class="score-right"
+                    >1</span
+                  >
+                </div>
+                <div class="match-time">
+                  Pedro Neto 64' Aaron Wan-Bissaka 74'(OG) Jarrod Bowen 42'
+                </div>
+                <div class="match-referee">Referee: Mike dean</div>
+                <div class="match-bet-options">
+                  <button class="match-bet-option">1.48</button>
+                  <button class="match-bet-option">7.48</button>
+                  <button class="match-bet-option">3.74</button>
+                </div>
+
+                <button type="button" class="match-locate-btn">
+                  Place to bet
+                </button>
+              </div>
+
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZZfnzO8eJlY1DxeeKRBNVrJlHdl0l62Wqw&s"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">West Ham</div>
+              </div>
             </div>
-
-            <div class="col team-info">
-              <div class="logo-image">
+          </div>
+          <div class="match-container">
+            <div class="match-top">
+              <div class="status bg-danger-subtle text-danger">Live</div>
+              <div class="place-info">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZZfnzO8eJlY1DxeeKRBNVrJlHdl0l62Wqw&s"
+                  class="match-logo"
+                  src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png"
                   alt=""
                 />
+                <div class="match-name">English Premier League</div>
               </div>
-              <div class="team-name">West Ham</div>
+              <div class="buttons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+            <div class="row match-main">
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">Chelsea</div>
+              </div>
+
+              <div class="col match-info">
+                <div class="match-schedule">1 May at 17:30</div>
+                <div class="match-score">
+                  <span class="score-left">2</span>:<span class="score-right"
+                    >1</span
+                  >
+                </div>
+                <div class="match-time">
+                  Pedro Neto 64' Aaron Wan-Bissaka 74'(OG) Jarrod Bowen 42'
+                </div>
+                <div class="match-referee">Referee: Mike dean</div>
+                <div class="match-bet-options">
+                  <button class="match-bet-option">1.48</button>
+                  <button class="match-bet-option">7.48</button>
+                  <button class="match-bet-option">3.74</button>
+                </div>
+
+                <button type="button" class="match-locate-btn">
+                  Place to bet
+                </button>
+              </div>
+
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZZfnzO8eJlY1DxeeKRBNVrJlHdl0l62Wqw&s"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">West Ham</div>
+              </div>
+            </div>
+          </div>
+          <div class="match-container">
+            <div class="match-top">
+              <div class="status bg-danger-subtle text-danger">Live</div>
+              <div class="place-info">
+                <img
+                  class="match-logo"
+                  src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png"
+                  alt=""
+                />
+                <div class="match-name">English Premier League</div>
+              </div>
+              <div class="buttons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+            <div class="row match-main">
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">Chelsea</div>
+              </div>
+
+              <div class="col match-info">
+                <div class="match-schedule">1 May at 17:30</div>
+                <div class="match-score">
+                  <span class="score-left">2</span>:<span class="score-right"
+                    >1</span
+                  >
+                </div>
+                <div class="match-time">
+                  Pedro Neto 64' Aaron Wan-Bissaka 74'(OG) Jarrod Bowen 42'
+                </div>
+                <div class="match-referee">Referee: Mike dean</div>
+                <div class="match-bet-options">
+                  <button class="match-bet-option">1.48</button>
+                  <button class="match-bet-option">7.48</button>
+                  <button class="match-bet-option">3.74</button>
+                </div>
+
+                <button type="button" class="match-locate-btn">
+                  Place to bet
+                </button>
+              </div>
+
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZZfnzO8eJlY1DxeeKRBNVrJlHdl0l62Wqw&s"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">West Ham</div>
+              </div>
+            </div>
+          </div>
+          <div class="match-container">
+            <div class="match-top">
+              <div class="status bg-danger-subtle text-danger">Live</div>
+              <div class="place-info">
+                <img
+                  class="match-logo"
+                  src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png"
+                  alt=""
+                />
+                <div class="match-name">English Premier League</div>
+              </div>
+              <div class="buttons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+            <div class="row match-main">
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">Chelsea</div>
+              </div>
+
+              <div class="col match-info">
+                <div class="match-schedule">1 May at 17:30</div>
+                <div class="match-score">
+                  <span class="score-left">2</span>:<span class="score-right"
+                    >1</span
+                  >
+                </div>
+                <div class="match-time">
+                  Pedro Neto 64' Aaron Wan-Bissaka 74'(OG) Jarrod Bowen 42'
+                </div>
+                <div class="match-referee">Referee: Mike dean</div>
+                <div class="match-bet-options">
+                  <button class="match-bet-option">1.48</button>
+                  <button class="match-bet-option">7.48</button>
+                  <button class="match-bet-option">3.74</button>
+                </div>
+
+                <button type="button" class="match-locate-btn">
+                  Place to bet
+                </button>
+              </div>
+
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZZfnzO8eJlY1DxeeKRBNVrJlHdl0l62Wqw&s"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">West Ham</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="match-container">
+            <div class="match-top">
+              <div class="status bg-danger-subtle text-danger">Live</div>
+              <div class="place-info">
+                <img
+                  class="match-logo"
+                  src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png"
+                  alt=""
+                />
+                <div class="match-name">English Premier League</div>
+              </div>
+              <div class="buttons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+            <div class="row match-main">
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">Chelsea</div>
+              </div>
+
+              <div class="col match-info">
+                <div class="match-schedule">1 May at 17:30</div>
+                <div class="match-score">
+                  <span class="score-left">2</span>:<span class="score-right"
+                    >1</span
+                  >
+                </div>
+                <div class="match-time">
+                  Pedro Neto 64' Aaron Wan-Bissaka 74'(OG) Jarrod Bowen 42'
+                </div>
+                <div class="match-referee">Referee: Mike dean</div>
+                <div class="match-bet-options">
+                  <button class="match-bet-option">1.48</button>
+                  <button class="match-bet-option">7.48</button>
+                  <button class="match-bet-option">3.74</button>
+                </div>
+
+                <button type="button" class="match-locate-btn">
+                  Place to bet
+                </button>
+              </div>
+
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZZfnzO8eJlY1DxeeKRBNVrJlHdl0l62Wqw&s"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">West Ham</div>
+              </div>
+            </div>
+          </div>
+          <div class="match-container">
+            <div class="match-top">
+              <div class="status bg-danger-subtle text-danger">Live</div>
+              <div class="place-info">
+                <img
+                  class="match-logo"
+                  src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png"
+                  alt=""
+                />
+                <div class="match-name">English Premier League</div>
+              </div>
+              <div class="buttons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+            <div class="row match-main">
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">Chelsea</div>
+              </div>
+
+              <div class="col match-info">
+                <div class="match-schedule">1 May at 17:30</div>
+                <div class="match-score">
+                  <span class="score-left">2</span>:<span class="score-right"
+                    >1</span
+                  >
+                </div>
+                <div class="match-time">
+                  Pedro Neto 64' Aaron Wan-Bissaka 74'(OG) Jarrod Bowen 42'
+                </div>
+                <div class="match-referee">Referee: Mike dean</div>
+                <div class="match-bet-options">
+                  <button class="match-bet-option">1.48</button>
+                  <button class="match-bet-option">7.48</button>
+                  <button class="match-bet-option">3.74</button>
+                </div>
+
+                <button type="button" class="match-locate-btn">
+                  Place to bet
+                </button>
+              </div>
+
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZZfnzO8eJlY1DxeeKRBNVrJlHdl0l62Wqw&s"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">West Ham</div>
+              </div>
+            </div>
+          </div>
+          <div class="match-container">
+            <div class="match-top">
+              <div class="status bg-danger-subtle text-danger">Live</div>
+              <div class="place-info">
+                <img
+                  class="match-logo"
+                  src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png"
+                  alt=""
+                />
+                <div class="match-name">English Premier League</div>
+              </div>
+              <div class="buttons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+            <div class="row match-main">
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">Chelsea</div>
+              </div>
+
+              <div class="col match-info">
+                <div class="match-schedule">1 May at 17:30</div>
+                <div class="match-score">
+                  <span class="score-left">2</span>:<span class="score-right"
+                    >1</span
+                  >
+                </div>
+                <div class="match-time">
+                  Pedro Neto 64' Aaron Wan-Bissaka 74'(OG) Jarrod Bowen 42'
+                </div>
+                <div class="match-referee">Referee: Mike dean</div>
+                <div class="match-bet-options">
+                  <button class="match-bet-option">1.48</button>
+                  <button class="match-bet-option">7.48</button>
+                  <button class="match-bet-option">3.74</button>
+                </div>
+
+                <button type="button" class="match-locate-btn">
+                  Place to bet
+                </button>
+              </div>
+
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZZfnzO8eJlY1DxeeKRBNVrJlHdl0l62Wqw&s"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">West Ham</div>
+              </div>
+            </div>
+          </div>
+          <div class="match-container">
+            <div class="match-top">
+              <div class="status bg-danger-subtle text-danger">Live</div>
+              <div class="place-info">
+                <img
+                  class="match-logo"
+                  src="https://ssl.gstatic.com/onebox/media/sports/logos/5D811WOqeV3SRG6qt-DDPA_64x64.png"
+                  alt=""
+                />
+                <div class="match-name">English Premier League</div>
+              </div>
+              <div class="buttons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+            <div class="row match-main">
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Chelsea_crest.svg/800px-Chelsea_crest.svg.png"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">Chelsea</div>
+              </div>
+
+              <div class="col match-info">
+                <div class="match-schedule">1 May at 17:30</div>
+                <div class="match-score">
+                  <span class="score-left">2</span>:<span class="score-right"
+                    >1</span
+                  >
+                </div>
+                <div class="match-time">
+                  Pedro Neto 64' Aaron Wan-Bissaka 74'(OG) Jarrod Bowen 42'
+                </div>
+                <div class="match-referee">Referee: Mike dean</div>
+                <div class="match-bet-options">
+                  <button class="match-bet-option">1.48</button>
+                  <button class="match-bet-option">7.48</button>
+                  <button class="match-bet-option">3.74</button>
+                </div>
+
+                <button type="button" class="match-locate-btn">
+                  Place to bet
+                </button>
+              </div>
+
+              <div class="col team-info">
+                <div class="logo-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZZfnzO8eJlY1DxeeKRBNVrJlHdl0l62Wqw&s"
+                    alt=""
+                  />
+                </div>
+                <div class="team-name">West Ham</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- footer -->
+    <footer class="p-5 bg-light">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"
+                >Email address</label
+              >
+              <input
+                id="newsletter1"
+                type="text"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
