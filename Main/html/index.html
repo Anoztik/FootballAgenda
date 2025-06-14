@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/Style.css" />
   </head>
   <body>
     <!-- nav -->
@@ -54,7 +54,7 @@
               <a class="nav-link" href="./html/Login.html">Login/ Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#feedback">Feedback</a>
+              <a class="nav-link" href="./html/Feedback.html">Feedback</a>
             </li>
           </ul>
         </div>
@@ -992,57 +992,36 @@
             </div>
           </div>
         </div>
-        <div class="row blog-list">
-        <div class="col-md-6 col-lg-4">
-              <div class="card blog-card">
-                <img
-                  src="https://imagenes.eldebate.com/files/new_main_image/files/fp/uploads/2022/03/11/622b875f925c0.r_d.1022-332.jpeg"
-                  class="card-img-top"
-                  alt="Blog Image"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Cristiano Ronaldo</h5>
-                  <p class="card-text">This website is so crazy, it can help me see all newspaper, magazines and some shop sport to play with me friends.</p>
-                  <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="row blog-list">
+       </div>
+          <div class="row blog-list">
             <div class="col-md-6 col-lg-4">
               <div class="card blog-card">
                 <img
-                  src="https://inkythuatso.com/uploads/thumbnails/800/2022/03/anh-mbappe-4k-1-15-10-15-19.jpg"
+                  src="https://www.storedesign.ie/wp-content/uploads/2018/08/Life-Style-Sports-Grafton-St-Bootroom-min-1.jpg"
                   class="card-img-top"
                   alt="Blog Image"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Kilian Mbappe</h5>
-                  <p class="card-text">This website is so crazy, it can help me see all newspaper, magazines and some shop sport to play with me friends.</p>
-                  <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="row blog-list">
-            <div class="col-md-6 col-lg-4">
-              <div class="card blog-card">
-                <img
-                  src="https://sohanews.sohacdn.com/160588918557773824/2025/3/18/messi-argentina-3-09243470-1742265856085-1742265856242810106145.jpg"
-                  class="card-img-top"
-                  alt="Blog Image"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Lionel Messi</h5>
-                  <p class="card-text">This website is so crazy, it can help me see all newspaper, magazines and some shop sport to play with me friends.</p>
-                  <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-              </div>
-            </div>
-            </div>
-      </section>
-    </main>
+                  <h5 class="card-title" >Sport shop in Ho Chi Minh City</h5>
+                  <p class="card-text"></p>
+                  <button id="ggMapsBtn" href="#" class="btn btn-primary">Click here</button>
+                  <script>
+    const btn = document.getElementById("ggMapsBtn");
 
+    btn.addEventListener("click", function() {
+      // Địa chỉ hoặc tọa độ bạn muốn mở trên Google Maps
+      const address = "1600 Amphitheatre Parkway, Mountain View, CA";
+      // Hoặc bạn có thể dùng tọa độ GPS, ví dụ: 37.422, -122.084
+      // const coords = "37.422,-122.084";
+
+      // Chuyển hướng tới Google Maps với địa chỉ đó
+      window.location.href = `https://www.google.com/maps/search/shop+giay+bong+da+%E1%BB%9F+s%C3%A0i+g%C3%B2n/@10.9772654,106.6045922,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D`;
+    });
+  </script>
+                 
+                </div>
+              </div>
+            </div>
     <!-- footer -->
     <footer class="p-5 bg-light">
       <div class="row">
@@ -1134,6 +1113,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <spript src="./js/manage_account.js"
+    <spript src="./js/manage_account.js"></spript>
+    <spript src="./html/Feedback.html"></spript>
   </body>
 </html>
