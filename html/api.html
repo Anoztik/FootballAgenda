@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Match Info</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      .match-box {
+        border: 1px solid #ccc;
+        padding: 20px;
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .teams {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .team {
+        width: 40%;
+        text-align: center;
+      }
+      .team img {
+        width: 50px;
+        height: 50px;
+      }
+      .score {
+        font-size: 2em;
+        margin: 10px 0;
+      }
+      .subtitle {
+        color: gray;
+        font-size: 0.9em;
+      }
+      .status {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="match-box" id="matchBox">Loading match...</div>
+
+    <script>
+      const apiKey = "28574115b75ee06b3fc3a5c1e73aebf1"; // Replace with your API-Football key
+
+      const fixtureId = 317600; // Replace with a valid fixture ID
+
+      fetch(`https://v3.football.api-sports.io/fixtures?date=2025-06-20`, {
+        headers: {
+          "x-apisports-key": apiKey,
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("API Response:", data); // Debug log
+
+          // Safety check
+          if (!data.response || data.response.length === 0) {
+            document.getElementById("matchBox").textContent =
+              "No match data found.";
+            return;
+          }
+
+          const match = data.response[0];
+          const teams = match.teams;
+          const league = match.league;
+          const venue = match.fixture.venue;
+          const referee = match.fixture.referee || "N/A";
+          const date = new Date(match.fixture.date).toLocaleString();
+
+          const html = `
+      <div class="subtitle">${league.country.toUpperCase()}: ${league.name.toUpperCase()}<br>
+      ${league.round || ""}</div>
+      <div style="margin: 10px 0;">${date}</div>
+      <div class="teams">
+        <div class="team">
+          <img src="${teams.home.logo}" alt="${teams.home.name}"><br>
+          ${teams.home.name}
+        </div>
+        <div class="score">${match.goals.home} - ${match.goals.away}</div>
+        <div class="team">
+          <img src="${teams.away.logo}" alt="${teams.away.name}"><br>
+          ${teams.away.name}
+        </div>
+      </div>
+      <div class="status">${match.fixture.status.long}</div>
+      <div class="subtitle">${venue.name}, <strong>${venue.city}</strong></div>
+      <div class="subtitle">Referee: 🧍‍♂️ ${referee}</div>
+    `;
+          document.getElementById("matchBox").innerHTML = html;
+        })
+        .catch((err) => {
+          console.error("Error fetching match:", err);
+          document.getElementById("matchBox").textContent =
+            "Error loading match data.";
+        });
+    </script>
+  </body>
+</html>

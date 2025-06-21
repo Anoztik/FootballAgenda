@@ -18,14 +18,57 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./css/Style.css" />
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      .match-box {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: auto;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        border-radius: 10px;
+      }
+      .teams {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .team {
+        width: 40%;
+        text-align: center;
+      }
+      .team img {
+        width: 50px;
+        height: 50px;
+      }
+      .score {
+        font-size: 2em;
+        margin: 10px 0;
+      }
+      .subtitle {
+        color: gray;
+        font-size: 0.9em;
+      }
+      .status {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
 
+    <link rel="stylesheet" href="../css/Style.css" />
   </head>
   <body>
     <!-- nav -->
     <nav class="sticky-top navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#carousel">FootballAgenda</a>
+        <a class="navbar-brand" id="home-logo" href="../index.html#carousel"
+          >FootballAgenda</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -40,23 +83,40 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../index.html#carousel"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#report">Report</a>
+              <a class="nav-link" href="./news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#post article">Post article</a>
+              <a class="nav-link" href="./videos.html">Videos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#betting game">Betting game</a>
+              <a class="nav-link active" href="./matchs.html">Matchs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/Login.html">Login/ Register</a>
+              <a class="nav-link" href="./login.html" id="login-btn"
+                >Login/ Register</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html" id="logout-btn"
+                >Logout</a
+              >
             </li>
           </ul>
         </div>
-        <form class="d-flex" role="search">
+        <form
+          class="d-flex"
+          role="search"
+          id="search-form"
+          action="./search.html"
+        >
           <input
             class="form-control me-2"
             type="search"
@@ -68,100 +128,13 @@
       </div>
     </nav>
 
-      <!-- news -->
-      <section id="vote team match">
-        <h2 class="title">Vote team match</h2>
-  </style>
-        <div class="col">
-              <div class="card mb-3 w-100">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="https://image.tienphong.vn/w1000/Uploaded/2025/lzwlzsg-eafzljmgfy/2024_09_23/461124215-920859470072480-6803915380630022753-n-207.jpg"
-                      class="img-fluid rounded-start"
-                      style="object-fit: cover; width: 100%; height: 100%"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <p class="card-text">
-                        Choose your best team!
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary"
-                          >Last updated 3 mins ago</small
-                        >
-                        <h2>Bình chọn với hình ảnh</h2>
-
-    <div class="option">
-      <input type="radio" id="option1" name="vote" value="A">
-      <label for="option1">
-        <img src="" alt="Ảnh A">
-        Thép Xanh Nam Định
-      </label>
-    </div>
-
-    <div class="option">
-      <input type="radio" id="option2" name="vote" value="B">
-      <label for="option2">
-        <img src="" alt="Ảnh B">
-        Quảng Nam
-      </label>
-    </div>
-
-    <script>
-    const submitBtn = document.getElementById("submitBtn");
-    const options = document.querySelectorAll(".option");
-
-    submitBtn.addEventListener("click", function() {
-      let selected = false;
-      options.forEach(option => {
-        option.classList.remove("voted");
-        const radio = option.querySelector("input[type='radio']");
-        if (radio.checked) {
-          option.classList.add("voted");
-          selected = true;
-        }
-      });
-      if (!selected) {
-        alert("Vui lòng chọn một lựa chọn trước khi gửi.");
-      }
-    });
-  </script>
-  </div>
-                      </p>
-                      <a href="#" class="btn btn-primary">Gửi</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <div class="vote-container">
-  
-
-  <script>
-    const submitBtn = document.getElementById("submitBtn");
-    const options = document.querySelectorAll(".option");
-
-    submitBtn.addEventListener("click", function() {
-      let selected = false;
-      options.forEach(option => {
-        option.classList.remove("voted");
-        const radio = option.querySelector("input[type='radio']");
-        if (radio.checked) {
-          option.classList.add("voted");
-          selected = true;
-        }
-      });
-      if (!selected) {
-        alert("Vui lòng chọn một lựa chọn trước khi gửi.");
-      }
-    });
-  </script>
-
-    
+    <!-- main -->
+    <main class="container-fluid">
+      <section id="matchs">
+        <h2 class="title">Matchs for today</h2>
+        <div class="matchs" id="match-list"></div>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer class="p-5 bg-light">
@@ -176,13 +149,19 @@
               <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Privacy policy</a>
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Privacy policy</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Cookie policy</a>
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Cookie policy</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Content guidelines & reporting</a>
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Content guidelines & reporting</a
+              >
             </li>
           </ul>
         </div>
@@ -244,19 +223,19 @@
                 placeholder="Email address"
               />
               <button class="btn btn-primary" type="button">Subscribe</button>
-
-              
             </div>
           </form>
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <spript src="./js/manage_account.js"></spript>
-    <spript src="./html/Feedback.html"></spript>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/matchs.js"></script>
   </body>
 </html>
